@@ -1,13 +1,17 @@
+## 功能
+- 静默安装APP，卸载，打开，监听。
+- 进程间通信。
+- 获取设备UDID。
+- 后台保活。
 
 ## 集成
 - 直接使用
 ```sh
-pod 'KPAppInstall', :git => ''
+pod 'KPAppInstall', :git => 'https://github.com/LZRight123/KPAppMananger.git'
 ```
 - clone到本地
 ```sh
-git clone 
-
+git clone https://github.com/LZRight123/KPAppMananger.git
 pod 'KPAppInstall', :path => '../kpappinstall'
 ```
 <!-- ## 配置

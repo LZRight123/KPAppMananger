@@ -101,7 +101,6 @@
 				DF951AC026C697D70077C6E4 /* Resources */,
 				5507C3753AB98A7C190A0685 /* [CP] Embed Pods Frameworks */,
 				AC778502AB4BBD74B915EF67 /* [CP] Copy Pods Resources */,
-				DF951AD926C69C530077C6E4 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -213,23 +212,6 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Example/Pods-Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
-		};
-		DF951AD926C69C530077C6E4 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "ln -fhs \"${BUILT_PRODUCTS_DIR}\" \"${PROJECT_DIR}\"/LatestBuild\n\ncp ${PROJECT_DIR}/../script/* \"${BUILT_PRODUCTS_DIR}\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

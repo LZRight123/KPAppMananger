@@ -18,7 +18,10 @@ Pod::Spec.new do |s|
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   
     s.description      = <<-DESC
-                          安装，卸载，打开，监听等...
+                          静默安装，卸载，打开，监听。
+                          进程间通信。
+                          获取设备UDID。
+                          后台保活。
                          DESC
   
     s.homepage         = 'https://github.com/LZRight123'
