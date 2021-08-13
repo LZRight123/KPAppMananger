@@ -23,6 +23,12 @@ sh script/test.sh
 ``` -->
 
 ## 用法
+- 获取设备UDID
+```sh
+[KPAppTool UDID]
+// 获取设备信息，包括UDID 本机名称 机身颜色 等
+[KPAppTool deviceInfo]
+```
 - 后台保活
 Signing & Capabilities -> BackgroundModes -> `Audio` 
 ```c
