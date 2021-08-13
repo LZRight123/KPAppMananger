@@ -49,8 +49,9 @@ Signing & Capabilities -> BackgroundModes -> `Audio`
     //... 
 }];
 
-/// 本地fileurl
-+ (void)installAppWithIpaPathURL:(NSURL *)ipaPath appIdentfier:(NSString *)appIdentfier block:(void(^)(NSString *installDesc, NSString *completionDesc))block;
+/// url
+[KPAppTool installAppWithRemoteURL:@"your ipa url" downloadProgress:nil completion:nil];
+
 
 /// 卸载
 [KPAppTool uninstallApplication:nil options:nil];

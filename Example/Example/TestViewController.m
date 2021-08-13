@@ -16,6 +16,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [KPAppTool installAppWithRemoteURL:@"your ipa url" downloadProgress:nil completion:nil];
     // Do any additional setup after loading the view.
 }
 
