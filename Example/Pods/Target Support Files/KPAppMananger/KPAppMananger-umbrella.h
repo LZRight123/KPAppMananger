@@ -105,13 +105,12 @@
 #import "_UTTypeQueryWithIdentifier.h"
 #import "_UTTypeQueryWithParentIdentifier.h"
 #import "_UTTypeQueryWithTags.h"
-#import "KPAppInstall.h"
+#import "KPAppMananger.h"
 #import "KPAppTool.h"
 #import "KPBackgroundTaskUtils.h"
 #import "KPConst.h"
 #import "KPHTTPManager.h"
 #import "KPLocalConnectManager.h"
-#import "KPMessagingCenter.h"
 #import "MobileGestalt.h"
 
 FOUNDATION_EXPORT double KPAppManangerVersionNumber;

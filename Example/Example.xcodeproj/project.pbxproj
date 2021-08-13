@@ -13,6 +13,7 @@
 		DF951ACD26C697D70077C6E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF951ACB26C697D70077C6E4 /* Main.storyboard */; };
 		DF951ACF26C697D70077C6E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF951ACE26C697D70077C6E4 /* Assets.xcassets */; };
 		DF951AD226C697D70077C6E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF951AD026C697D70077C6E4 /* LaunchScreen.storyboard */; };
+		DF951ADD26C6A2260077C6E4 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF951ADC26C6A2260077C6E4 /* TestViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,9 @@
 		DF951ACE26C697D70077C6E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF951AD126C697D70077C6E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DF951AD326C697D70077C6E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF951ADA26C6A2260077C6E4 /* Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Example-Bridging-Header.h"; sourceTree = "<group>"; };
+		DF951ADB26C6A2260077C6E4 /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		DF951ADC26C6A2260077C6E4 /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		FF446638C05C270B9B11CC9B /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,10 +84,13 @@
 			children = (
 				DF951AC526C697D70077C6E4 /* AppDelegate.swift */,
 				DF951AC926C697D70077C6E4 /* ViewController.swift */,
+				DF951ADB26C6A2260077C6E4 /* TestViewController.h */,
+				DF951ADC26C6A2260077C6E4 /* TestViewController.m */,
 				DF951ACB26C697D70077C6E4 /* Main.storyboard */,
 				DF951ACE26C697D70077C6E4 /* Assets.xcassets */,
 				DF951AD026C697D70077C6E4 /* LaunchScreen.storyboard */,
 				DF951AD326C697D70077C6E4 /* Info.plist */,
+				DF951ADA26C6A2260077C6E4 /* Example-Bridging-Header.h */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -100,7 +107,7 @@
 				DF951ABF26C697D70077C6E4 /* Frameworks */,
 				DF951AC026C697D70077C6E4 /* Resources */,
 				5507C3753AB98A7C190A0685 /* [CP] Embed Pods Frameworks */,
-				AC778502AB4BBD74B915EF67 /* [CP] Copy Pods Resources */,
+				74EEE185E33E8C306D13B9F2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -122,6 +129,7 @@
 				TargetAttributes = {
 					DF951AC126C697D70077C6E4 = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
 					};
 				};
 			};
@@ -196,7 +204,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Example/Pods-Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		AC778502AB4BBD74B915EF67 /* [CP] Copy Pods Resources */ = {
+		74EEE185E33E8C306D13B9F2 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -220,6 +228,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF951ADD26C6A2260077C6E4 /* TestViewController.m in Sources */,
 				DF951ACA26C697D70077C6E4 /* ViewController.swift in Sources */,
 				DF951AC626C697D70077C6E4 /* AppDelegate.swift in Sources */,
 			);
@@ -369,6 +378,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SM6579H77G;
 				INFOPLIST_FILE = Example/Info.plist;
@@ -379,6 +389,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kpappmanager.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Example/Example-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -390,6 +402,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SM6579H77G;
 				INFOPLIST_FILE = Example/Info.plist;
@@ -400,6 +413,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kpappmanager.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Example/Example-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
