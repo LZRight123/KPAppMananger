@@ -6,7 +6,7 @@
 //
 
 #import "TestViewController.h"
-#import "kpa"
+#import "KPAppMananger.h"
 @interface TestViewController ()
 
 @end
@@ -15,6 +15,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     // Do any additional setup after loading the view.
 }
 
