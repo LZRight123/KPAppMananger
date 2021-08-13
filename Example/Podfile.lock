@@ -1,0 +1,43 @@
+PODS:
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
+  - GCDWebServer (3.5.4):
+    - GCDWebServer/Core (= 3.5.4)
+  - GCDWebServer/Core (3.5.4)
+  - KPAppMananger (0.1.0):
+    - AFNetworking
+    - GCDWebServer
+
+DEPENDENCIES:
+  - KPAppMananger (from `../../KPAppMananger`)
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
+    - GCDWebServer
+
+EXTERNAL SOURCES:
+  KPAppMananger:
+    :path: "../../KPAppMananger"
+
+SPEC CHECKSUMS:
+  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  GCDWebServer: 2c156a56c8226e2d5c0c3f208a3621ccffbe3ce4
+  KPAppMananger: b8a63ade7431ab014353e202d7eb03a9c505a399
+
+PODFILE CHECKSUM: 39eaf0c6117f9541a732fe3c3b5aa101537a2558
+
+COCOAPODS: 1.10.1
