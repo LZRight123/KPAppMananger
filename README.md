@@ -1,3 +1,5 @@
+## [项目地址](https://github.com/LZRight123/KPAppMananger)
+
 ## 功能
 - 静默安装APP，卸载，打开，监听。
 - 进程间通信。
@@ -7,12 +9,12 @@
 ## 集成
 - 直接使用
 ```sh
-pod 'KPAppInstall', :git => 'https://github.com/LZRight123/KPAppMananger.git'
+pod 'KPAppMananger', :git => 'https://github.com/LZRight123/KPAppMananger.git'
 ```
 - clone到本地
 ```sh
 git clone https://github.com/LZRight123/KPAppMananger.git
-pod 'KPAppInstall', :path => '../kpappinstall'
+pod 'KPAppMananger', :path => '../KPAppMananger'
 ```
 <!-- ## 配置
 - copy script文件夹到项目目录
