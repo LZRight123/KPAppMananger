@@ -54,7 +54,6 @@ Signing & Capabilities -> BackgroundModes -> `Audio`
 /// url
 [KPAppTool installAppWithRemoteURL:@"your ipa url" downloadProgress:nil completion:nil];
 
-
 /// 卸载
 [KPAppTool uninstallApplication:nil options:nil];
 
@@ -66,13 +65,13 @@ Signing & Capabilities -> BackgroundModes -> `Audio`
 ```c
 /// 服务端：ping
 [KPAppToolInstance pingTimeSecond:3];
-[KPAppToolInstance registerIPCNotfication:@"kp.xm.qw.pong" callBack:^(NSString *name) {
+[KPAppToolInstance registerIPCNotfication:@"kp.test.pong" callBack:^(NSString *name) {
     //....
 }];
 /// 客户端
 [KPAppToolInstance recevicePingCallBack:^(NSString *name) {
     NSLog(@"接收到了ping: %@", name);
-    [KPAppToolInstance postIPCNoftication:@"kp.xm.qw.pong"];
+    [KPAppToolInstance postIPCNoftication:@"kp.test.pong"];
 }];
 ```
 
